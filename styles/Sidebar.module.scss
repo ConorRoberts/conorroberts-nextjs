@@ -37,6 +37,9 @@
     letter-spacing: 0.08rem;
     text-transform: uppercase;
   }
+  p{
+    text-align:center;
+  }
   .headshotContainer {
     img {
       border-radius: 50%;
@@ -57,9 +60,9 @@
       margin: 1rem;
       color: white;
       transition: color 300ms;
-      &:hover {
-        color: yellow;
-      }
+      // &:hover {
+      //   color: yellow;
+      // }
     }
   }
 }
