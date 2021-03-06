@@ -1,0 +1,27 @@
+.container{
+    display:flex;
+    flex:1;
+    justify-content:flex-start;
+    align-items:center;
+    .textContainer{
+        flex:0.6;
+        margin-left:3rem;
+    }
+    .imageContainer{
+        flex:0.1;
+    }
+}
+
+@media (max-width: 600px) {
+    .container{
+        .textContainer{
+            flex:0.5;
+            h3{
+                font-size:1.2rem;
+            }
+        }
+        .imageContainer{
+            flex:0.4;
+        }
+    }
+  }
