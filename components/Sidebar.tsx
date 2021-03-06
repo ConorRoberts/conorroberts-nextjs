@@ -23,10 +23,7 @@ const SmallScreenContent = () => {
     const btnRef = React.useRef()
     return (
         <div className={styles.bar}>
-            {/* <Button ref={btnRef} colorScheme="teal" onClick={onOpen}>
-                Open
-            </Button> */}
-            <Icon as={GiHamburgerMenu} ref={btnRef} colorScheme="teal" onClick={onOpen} />
+            <Icon as={GiHamburgerMenu} ref={btnRef} onClick={onOpen} />
             <Drawer
                 isOpen={isOpen}
                 placement="right"
