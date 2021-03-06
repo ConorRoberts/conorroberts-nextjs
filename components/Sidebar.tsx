@@ -50,7 +50,7 @@ const BigScreenContent = () => {
     return (
         <div className={styles.content}>
             <div className={styles.headshotContainer}>
-                <Image src="/headshot.jpg" width={2312} height={2616} />
+                <Image src="/headshot.JPG" width={2312} height={2616} />
             </div>
             <h2>
                 Conor Roberts
