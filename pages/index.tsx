@@ -18,7 +18,7 @@ const Home: FunctionComponent = () => {
     <div className={styles.container}>
       <Head>
         <title>Conor Roberts</title>
-        <link rel="icon" href="/favicon.ico" />
+        {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
 
 
