@@ -72,7 +72,7 @@ const Home: FunctionComponent = () => {
               name="Karen Wright Blog"
               desc={"This is a simple blog project. Stores posts in MongoDB. Made with NextJS."}
               img={{ url: "/kwblog.png", width: 1910, height: 931 }}
-              link="https://conorroberts.com/campus-connect/"
+              link="https://gh.conorroberts.com/campus-connect/"
             />
           </div>
         </section>
