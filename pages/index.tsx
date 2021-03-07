@@ -12,7 +12,7 @@ import { Icon } from "@chakra-ui/react";
 
 
 const Home: FunctionComponent = () => {
-  // const isSmallScreen = useMediaQuery({ query: "(max-width:1100px)" });
+
   return (
     <div className={styles.container}>
       <Head>
@@ -64,13 +64,13 @@ const Home: FunctionComponent = () => {
               name="Campus Connect"
               desc={"Chat app meant to connect students via course-specific group chats. Uses Firebase to store messages and authenticate users."}
               img={{ url: "/campusconnect.png", width: 1917, height: 931 }}
-              link="https://karen-wright-blog.conorroberts.com/"
+              link="https://github.com/ConorRoberts/campus-connect"
             />
             <Project
               name="Karen Wright Blog"
               desc={"This is a simple blog project. Stores posts in MongoDB. Made with NextJS."}
               img={{ url: "/kwblog.png", width: 1910, height: 931 }}
-              link="https://gh.conorroberts.com/campus-connect/"
+              link="https://github.com/ConorRoberts/karen-wright-blog"
             />
           </div>
         </section>
