@@ -56,11 +56,14 @@
   flex-direction: column;
 }
 
-.big {
-  width: 100%;
+.main{
+  width:75%;
 }
-.small {
-  width: 75%;
+
+@media (max-width:1100px){
+  .main{
+    width:100%;
+  }
 }
 
 @media (max-width: 850px) {

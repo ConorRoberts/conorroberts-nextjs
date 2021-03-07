@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
     Drawer,
     DrawerBody,
@@ -15,20 +15,19 @@ import {
 import { MdEmail } from "react-icons/md";
 import Image from "next/image";
 import styles from "../styles/Sidebar.module.scss";
-import { useMediaQuery } from 'react-responsive'
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const SmallScreenContent = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
-    const btnRef = React.useRef()
+    // const btnRef = React.useRef()
+
     return (
         <div className={styles.bar}>
-            <Icon as={GiHamburgerMenu} ref={btnRef} onClick={onOpen} />
+            <Icon as={GiHamburgerMenu} onClick={onOpen} />
             <Drawer
                 isOpen={isOpen}
                 placement="right"
                 onClose={onClose}
-                finalFocusRef={btnRef}
             >
                 <DrawerOverlay>
                     <DrawerContent backgroundColor="dodgerblue">
@@ -81,17 +80,15 @@ const BigScreenContent = () => {
 
 const Sidebar = () => {
 
-    const isSmallScreen = useMediaQuery({ query: "(max-width:1100px)" })
-
     return (
-        <>
-            {isSmallScreen ?
-                <SmallScreenContent />
-                :
+        <div>
+                <div className={styles.smallScreen}>
+                    <SmallScreenContent />
+                </div>
                 <div className={styles.container}>
                     <BigScreenContent />
-                </div>}
-        </>
+                </div>
+        </div>
     )
 };
 

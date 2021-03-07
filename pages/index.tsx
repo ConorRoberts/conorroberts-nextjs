@@ -7,13 +7,12 @@ import Education from "../components/Education";
 import Sidebar from "../components/Sidebar";
 import { FiLink } from "react-icons/fi";
 import { Icon } from "@chakra-ui/react";
-import { useMediaQuery } from 'react-responsive'
 
 // const lorem = "Quam vulputate dignissim suspendisse in est. Mauris a diam maecenas sed enim ut. Vulputate odio ut enim blandit volutpat maecenas. Nulla facilisi nullam vehicula ipsum a arcu cursus. Urna cursus eget nunc scelerisque viverra mauris in aliquam. Elementum facilisis leo vel fringilla. Pharetra sit amet aliquam id. Magna sit amet purus gravida quis blandit turpis cursus.";
 
 
 const Home: FunctionComponent = () => {
-  const isSmallScreen = useMediaQuery({ query: "(max-width:1100px)" })
+  // const isSmallScreen = useMediaQuery({ query: "(max-width:1100px)" });
   return (
     <div className={styles.container}>
       <Head>
@@ -25,7 +24,7 @@ const Home: FunctionComponent = () => {
         <Image src="/toronto.jpg" height="810" width="1920" />
       </header>
       <Sidebar />
-      <main className={isSmallScreen ? styles.big : styles.small}>
+      <main className={styles.main}>
         <section className={styles.section}>
           <h1 className={styles.h1}>Conor Roberts</h1>
           <h2 className={styles.h2}>Computer Science Student & Web Developer</h2>
